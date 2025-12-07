@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
 const initData = require("./data.js");
+const MongoStore = require('connect-mongo');
 
 const Listing = require("../models/listing.js");
 
-const MONG_URL = "mongodb://127.0.0.1:27017/WonderLust";
+const MONG_URL = "mongodb+srv://taufikhussain65_db_user:HqoDIW53dSNRVhFg@cluster0.pk7vvp3.mongodb.net/?appName=Cluster0";
 
 main().then(()=>{
     console.log("connected to DB");
