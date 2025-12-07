@@ -1,0 +1,17 @@
+<% layout("/layouts/boilerplate") -%>
+
+<h3>Results for "<%= q %>"</h3>
+
+<% if (listing.length === 0) { %>
+  <p>No listings found.</p>
+<% } %>
+
+<div class="row">
+  <% listing.forEach(list => { %>
+    <div class="col-4">
+      <h5><%= list.title %></h5>
+      <p><%= list.country %></p>
+      <a href="/listing/<%= list._id %>">View</a>
+    </div>
+  <% }) %>
+</div>

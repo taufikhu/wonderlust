@@ -1,0 +1,96 @@
+ body{
+   font-family: "Plus Jakarta Sans", sans-serif !important;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+} 
+.container{
+    flex: 1;
+}
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links{
+    width: 100%;
+}
+.f-info-social{
+    width: 100%;
+    font-size: 1.2rem;
+}
+.f-info-social i{
+  margin: 0.8rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    background-color: #ebebeb;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text{
+  font-weight: 400;  
+}
+.listing-link{
+    text-decoration: none;
+}
+.card-img-top:hover{
+    opacity: 0.5;
+    background-color: white;
+
+}
+.form-btn button:hover{
+    background-color: rgb(255, 0, 119);
+  
+}
+.form-btn button{
+display: flex ; 
+justify-content: space-between ; 
+background-color: #fe424d ;
+
+} 
+.form-btn a{
+    color: #ebebeb;
+    text-align: center;
+    padding: 2px;
+}
+
+.show-image{
+    height: 30vh;
+}

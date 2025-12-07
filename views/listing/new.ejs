@@ -1,0 +1,85 @@
+<% layout("/layouts/boilerplate") -%>
+
+<body>
+   <div class="row">
+      <div class="col-8 offset-2">
+    <form action="/listing" class="needs-validation" novalidate method="POST" enctype="multipart/form-data">
+      <br><br>
+      <div class="mb-3">
+         <label for="title" class="form-label">Title</label>
+            <input type="text" 
+            name="listing[title]" 
+            placeholder="Enter Title" 
+            class="form-control"
+            required>
+             <div class="valid-feedback">
+      Looks good!
+    </div>
+      </div>
+
+      <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+         <textarea 
+         name="listing[description]"  
+         class="form-control"
+         maxlength="200"
+         required
+          >
+      </textarea>
+      </div>
+        <div class="mb-3">
+         <label for="image" class="form-label">Upload Image</label>
+         <input name="listing[image]"  type="file" class="form-control" >
+      </div>
+  
+      <div class="row" >
+          <div class="mb-3 col-md-4">
+         <label for="price" class="form-label">Price</label>
+         <input 
+         
+         name="listing[price]" 
+         placeholder="Enter the price" 
+         class="form-control"
+        
+         required> 
+          <div class="invalid-feedback">
+      please enter price!
+    </div>
+      </div>
+      <div class="mb-3 col-md-8">
+         <label for="country" class="form-label">Country</label>
+         <input 
+         type="text" 
+         name="listing[country]" 
+         placeholder="Enter country" 
+         class="form-control"
+         required> 
+             <div class="invalid-feedback">
+      required country!
+    </div>
+      </div>
+      </div>
+     
+        <div class="mb-3">
+         <label for="location" class="form-label">Location</label>
+         <input 
+         type="text" 
+         name="listing[location]" 
+         placeholder="Enter the location" 
+         class="form-control"
+         required> 
+             <div class="invalid-feedback">
+      required location!
+    </div>
+      </div>
+           
+        <br><br>
+
+      <div class="form-btn" class="mb-3">
+       <button class="btn btn-dark">Add</button>
+      </div>
+    </form>
+    </div>
+    </div>
+        
+</body>
